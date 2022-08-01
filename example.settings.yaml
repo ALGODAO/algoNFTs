@@ -64,3 +64,42 @@ fetch_arc69:
 fetch_holders:
     public_key: "TIMPJ6P5FZRNNKYJLAYD44XFOSUWEOUAR6NRWJMQR66BRM3QH7UUWEHA24"
 
+batch_add_parameter:
+    # where are the parameter json files to change?
+    folder: "/home/zwilling/occ/nft/darkside/test/json"
+    # what parameter to set?
+    parameter_name: "posture"
+    parameter_value: "portrait"
+
+batch_id_change:
+    # where are the files to change? Operation is done for each folder
+    folders: [
+        "/home/zwilling/occ/nft/darkside/test/images",
+        "/home/zwilling/occ/nft/darkside/test/json"
+    ]
+    # files with which extentions should be renamed?
+    file_extensions: ["json", "png"]
+    # how to shift each id
+    offset_to_add: 134
+
+
+batch_id_shuffle:
+    # where are the files to change?
+    folder: "/home/zwilling/occ/nft/darkside/test/images"
+    # files with which extentions should be renamed?
+    image_extension: "png"
+    metadata_extension: "json"
+    # monkey shuffle iterations (how often to exchange two random ids)
+    shuffle_times: 1000
+
+
+merge_properties_into_csv:
+    # where are the files with the .json files to merge?
+    folder: "/home/zwilling/occ/nft/darkside/test/json"
+    # output csv filename
+    output_csv: "merged.csv"
+    # number of NFTs (need to be named from 1 to N)
+    nft_count: 134
+    # csv property columns matching the trait_types
+    trait_types: ["background", "weapon", "skin", "clothes", "headwear", "shield"]
+
