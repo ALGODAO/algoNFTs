@@ -7,6 +7,11 @@ batch_mint would also support Hash lips metadata, but it makes sense to transfor
 
 This means that the `_metadata.json` is ignored here.
 
+## Add parameter for batch
+Adds a parameter with the same value to every parameter `.json` file of an NFT.
+
+Adjust the parameters in `settings.yaml` and then run the `batch_id_change.py` script. 
+
 ## Batch id change
 Rename files to change the id number of an NFT and its property file.
 

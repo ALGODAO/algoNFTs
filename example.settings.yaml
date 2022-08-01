@@ -64,6 +64,13 @@ fetch_arc69:
 fetch_holders:
     public_key: "TIMPJ6P5FZRNNKYJLAYD44XFOSUWEOUAR6NRWJMQR66BRM3QH7UUWEHA24"
 
+batch_add_parameter:
+    # where are the parameter json files to change?
+    folder: "/home/zwilling/occ/nft/darkside/test/json"
+    # what parameter to set?
+    parameter_name: "posture"
+    parameter_value: "portrait"
+
 batch_id_change:
     # where are the files to change? Operation is done for each folder
     folders: [
