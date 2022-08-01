@@ -11,7 +11,7 @@ from lib.settings import Settings
 
 def batch_id_shuffle(config):
     """
-    Rename files to change the id number of an NFT and its property file.
+    Shuffle NFT ids in a folder including the image and json file.
     """
     folder = config.folder
     images = get_files_in_folder(folder, config.image_extension)

@@ -7,9 +7,6 @@ batch_mint would also support Hash lips metadata, but it makes sense to transfor
 
 This means that the `_metadata.json` is ignored here.
 
-## Merge properties from json to csv
-It merges the data together from property `.json` files for each NFT into a single `.csv` table. 
-
 ## Batch id change
 Rename files to change the id number of an NFT and its property file.
 
@@ -19,4 +16,10 @@ Adjust the parameters in `settings.yaml` and then run the `batch_id_change.py` s
 Randomly shuffles NFT ids of images and property files.
 Please first move the `.json` and `.png` files into the same folder.
 
-Adjust the parameters in `settings.yaml` and then run the `batch_id_shuffle.py` script. 
+Adjust the parameters in `settings.yaml` and then run the `batch_id_shuffle.py` script.
+
+## Merge properties from json to csv
+It merges the data together from property `.json` files for each NFT into a single `.csv` table.
+Make sure that all NFT properties are in the same folder and named from 1.json to n.json
+
+Adjust the parameters in `settings.yaml` and then run the `merge_properties_into_csv.py` script.
