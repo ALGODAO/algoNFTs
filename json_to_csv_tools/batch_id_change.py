@@ -4,6 +4,7 @@
 import os
 import sys
 
+from lib.file_helper import get_files_in_folder
 from lib.settings import Settings
 
 
@@ -23,17 +24,6 @@ def batch_id_change(config):
                 new_file = str(new_id) + '.' + extension
                 os.rename(os.path.join(folder, file), os.path.join(folder, new_file))
                 print(f"Renamed {file} to {new_file}")
-
-
-def get_files_in_folder(folder, extension):
-    """
-    Get all files in a folder with a given extension.
-    """
-    files = []
-    for file in os.listdir(folder):
-        if file.endswith(extension):
-            files.append(file)
-    return files
 
 
 if __name__ == "__main__":
